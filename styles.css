@@ -3,6 +3,8 @@
             padding: 0;
             box-sizing: border-box;
             font-family: 'Arial', sans-serif;
+
+            
         }
         
         body {
@@ -77,13 +79,14 @@
         
         .main-content {
             text-align: center;
-            
+
             padding: 50px 10%;
         }
         
         .subtitle {
             margin-bottom: 30px;
             font-size: 22px;
+
         }
         
         .highlight {
@@ -161,6 +164,9 @@
             font-weight: bold;
             margin-bottom: 30px;
             color: #fff;
+            background: linear-gradient(to right, #ff00ff, #ff8c00);
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
         .filter-buttons {
@@ -186,14 +192,37 @@
         }
 
        .projects-container {
-         display: flex;
-         flex-wrap: wrap;
-         justify-content: center; 
-         gap: 20px; 
-         padding: 20px;
+           display: flex;
+           flex-direction: row;
+           overflow-x: auto;        
+           overflow-y: hidden;
+  gap: 70px;
+  padding: 20px;
+  scroll-snap-type: x mandatory; 
+  white-space: nowrap;     
+}
+.project-card {
+  min-width: 300px;       
+  flex-shrink: 0;
+  scroll-snap-align: start; 
+}
+
+
+
+        @keyframes Open {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+        .page-wrapper{
+            animation: Open 1s ease-in-out both;
         }
-
-
+        
         .project-card {
             background-color: #1e1e1e;
             border-radius: 8px;
@@ -266,257 +295,3 @@
         }
 
 
-* {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
-        
-        body {
-            background-color: #121212;
-            color: #fff;
-            
-        }
-        
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 10%;
-            background-color: #000;
-        }
-        
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-             background: linear-gradient(to right, #ff00ff, #ff8c00);
-             -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        
-        nav ul {
-            display: flex;
-            list-style: none;
-        }
-        
-        nav ul li {
-            margin-left: 30px;
-        }
-        
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-            font-size: 16px;
-            transition: color 0.3s;
-        }
-        
-        nav ul li a:hover {
-             background: linear-gradient(to right, #ff00ff, #ff8c00);
-             -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        
-        .join-btn {
-            background-color: #e4ff00;
-            color: #000;
-            padding: 10px 20px;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 2px;
-            box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.2);
-        }
-        .join-btn:hover {
-             background: linear-gradient(to right, #ff00ff, #ff8c00);
-             -webkit-text-fill-color: transparent;
-             -webkit-background-clip: text;
-            background-clip: text;
-             border: 2px solid #ff8c00;  
-            box-shadow: 0 0 40px #c62525
-           
-        }
-        
-        .main-content {
-            text-align: center;
-            
-            padding: 50px 10%;
-        }
-        
-        .subtitle {
-            margin-bottom: 30px;
-            font-size: 22px;
-        }
-        
-        .highlight {
-            color: #e4ff00;
-        }
-        
-        .main-heading {
-            font-size: 60px;
-            font-weight: bold;
-             background: linear-gradient(to right, #fd06fd, #d65656ee);
-             -webkit-text-fill-color: transparent;
-            background-clip: text;
-            
-        }
-        
-        @keyframes fade {
-            from {opacity: .4}
-            to {opacity: 1}
-        }
-        
-        .tagline {
-            margin: 30px 0;
-            font-size: 18px;
-            color: #ccc;
-        }
-        
-        .cta-button {
-            display: inline-block;
-            background-color: #e4ff00;
-            color: #000;
-            padding: 15px 40px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 20px;
-            margin-top: 20px;
-            border-radius: 2px;
-            box-shadow: 5px 5px 0px rgba(255, 255, 255, 0.2);
-            transition: transform 0.3s;
-            
-        }
-        
-        .cta-button:hover {
-            transform: translateY(-5px);
-            
-        }
-
-        .section-header {
-            text-align: center;
-            padding: 50px 0 30px;
-        }
-
-        .section-title {
-            color: #ff47b7;
-            font-size: 16px;
-            text-transform: uppercase;
-            margin-bottom: 10px;
-
-        }
-
-        .featured-projects {
-            font-size: 42px;
-            font-weight: bold;
-            margin-bottom: 30px;
-            color: #fff;
-            background: linear-gradient(to right, #ff00ff, #ff8c00);
-            display: inline-block;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            
-
-        }
-
-        .filter-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin-bottom: 40px;
-        }
-
-        .filter-btn {
-            background-color: transparent;
-            border: none;
-            color: #fff;
-            padding: 10px 20px;
-            cursor: pointer;
-            border-radius: 30px;
-            font-size: 16px;
-            transition: all 0.3s;
-        }
-
-        .filter-btn.active {
-            background-color: #ff47b7;
-        }
-
-       .projects-container {
-         display: flex;
-         flex-wrap: wrap;
-         justify-content: center; 
-         gap: 20px; 
-         padding: 20px;
-        }
-
-
-        .project-card {
-            background-color: #1e1e1e;
-            border-radius: 8px;
-            overflow: hidden;
-            margin-bottom: 30px;
-            transition: transform 0.3s;
-            position: relative;
-        }
-
-        .project-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .project-image {
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
-        }
-
-        .project-content {
-            padding: 20px;
-        }
-
-        .project-title {
-            font-size: 22px;
-            color: #fff;
-            margin-bottom: 10px;
-        }
-
-        .project-description {
-            color: #c49d9d;
-            margin-bottom: 15px;
-            font-size: 16px;
-            line-height: 1.5;
-        }
-
-        .featured-tag {
-            background-color: #ff47b7;
-            color: white;
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 14px;
-            position: absolute ;
-            top: 15px;
-            box-shadow: #ef0fb4 0px 0px 10px;
-            left: 15px;
-        }
-      
-
-        .project-links {
-            display: flex;
-            gap: 15px;
-        }
-
-        .demo-btn {
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 14px;
-            text-align: center;
-            flex: 1;
-            
-        }
-
-        .demo-btn {
-            background-color: #8c52ff;
-            color: white;
-        }
-
-
-        
