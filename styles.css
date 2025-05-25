@@ -18,7 +18,7 @@
             z-index: 1000;
             top: 0;
             display: flex;
-            justify-content: space-between;
+            justify-content: center; 
             align-items: center;
             padding: 20px 10%;
             background-color: #000;
@@ -26,37 +26,19 @@
         }
         
         .logo {
-            font-size: 24px;
+            font-size: 25px;
             font-weight: bold;
-             background: linear-gradient(to right, #ff00ff, #ff8c00);
-             -webkit-text-fill-color: transparent;
+            background: linear-gradient(to right, #ff00ff, #ff8c00);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
             background-clip: text;
+            word-spacing: 10px;
+            letter-spacing: 2px;
+            text-align: center;
+            margin: 0; 
         }
         
-        nav ul {
-            display: flex;
-            list-style: none;
-        }
         
-        nav ul li {
-            margin-left: 30px;
-        }
-        
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-            font-size: 16px;
-            justify-content: space-between;
-            transition: color 0.3s;
-            width: 100%;
-            display: block;
-        }
-        
-        nav ul li a:hover {
-             background: linear-gradient(to right, #ff00ff, #ff8c00);
-             -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
         
        
         .main-content {
@@ -295,5 +277,3 @@
          text-align: center;
          z-index: 999;            
 }
-
-
