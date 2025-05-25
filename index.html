@@ -5,91 +5,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Investment Tracker - Projects Showcase</title>
     <link rel="stylesheet" href="styles.css">
+
+    
 </head>
 <body>
+    <div class="overlay" id="overlay"></div>
+    
     <header>
+        <button class="menu-toggle" id="menuToggle">
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <span>Menu</span>
+        </button>
         <div class="logo">
             <h1>Investment Tracker</h1>
         </div>
-       
     </header>
-    <div class="main-content">
+    
+    <div class="sidebar" id="sidebar">
+        <h2>Park Information</h2>
+        <ul>
+            <li>Tools Used</li>
+            <li>About Us</li>
+            <li>Contact</li>
+            <li>Privacy Policy</li>
+            <li>Terms of Service</li>
+            
+        </ul>
+    </div>
+    
+    <div class="main-content" id="mainContent">
         <h1 class="glow-text">Track Your Return Amounts!</h1>
         <p class="tagline">beginner friendly investment return tracker</p>
         <a href="https://github.com/Dharun-2k7/ReturnTracker" class="cta-button" target="_blank">Visit GitHub Repo</a>
     </div>
+    
     <div class="page-wrapper">
+        <div class="section-header">
+            <h3 class="featured-projects">Choose Investment Type</h3>
+        </div>
 
-    <div class="section-header">
-        <h3 class="featured-projects">Choose Investment Type</h3>
+        <div class="projects-container" id="projectsContainer">
+            <div class="project-card">
+                <div class="featured-tag">Mutual</div>
+                <img src="SIP.avif" alt="Investment Tracker" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">Systematic Investment Plan (SIP)</h3>
+                    <p class="project-description">Track Your estimated returns according to your investment</p>
+                    <div class="project-links">
+                        <a href="#" class="demo-btn">Yet to come</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="featured-tag">Fixed</div>
+                <img src="PPF.jpg" alt="Public Provident Fund" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">Public Provident Fund</h3>
+                    <p class="project-description">Track Your estimated returns according to your investment</p>
+                    <div class="project-links">
+                        <a href="#" class="demo-btn">YET TO COME</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="featured-tag">Fixed</div>
+                <img src="FD.avif" alt="Fixed Deposit" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">Fixed Deposit</h3>
+                    <p class="project-description">Track Your estimated returns according to your investment</p>
+                    <div class="project-links">
+                        <a href="#" class="demo-btn">Yet To Come</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="featured-tag">Fixed</div>
+                <img src="AP.jpg" alt="Annuity Plan" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">Annuity Plan</h3>
+                    <p class="project-description">Track Your estimated returns according to your investment</p>
+                    <div class="project-links">
+                        <a href="#" class="demo-btn">Yet To Come</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="featured-tag">Stocks</div>
+                <img src="STOCK.jpg" alt="Stock Market" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">Stock Market</h3>
+                    <p class="project-description">Track Your estimated returns according to your investment</p>
+                    <div class="project-links">
+                        <a href="#" class="demo-btn">Yet To Come</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div class="projects-container">
-        <div class="project-card">
-            <div class="featured-tag"> Mutual</div>
-            <img src="SIP.avif" alt="Investment Tracker" class="project-image">
-            <div class="project-content">
-                <h3 class="project-title">Systematic investmen plan (SIP)</h3>
-                <p class="project-description">Track Your estimated returns according to your investment</p>
-                
-                <div class="project-links">
-                    <a href="#" class="demo-btn">Yet to come</a>
-                </div>
-            </div>
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Investment Tracker. All rights reserved.</p>
+            <p>Designed by <a href="#" target="_blank">Dharun-2k7</a></p>
         </div>
-        
-        <div class="project-card">
-            <div class="featured-tag">Fixed</div>
-            <img src="PPF.jpg" alt="Public Provident Fund" class="project-image">
-            <div class="project-content">
-                <h3 class="project-title">Public Provident Fund</h3>
-                <p class="project-description">Track Your estimated returns according to your investment</p>
-                
-                <div class="project-links">
-                    <a href="#" class="demo-btn"> YET TO COME</a>
-                </div>
-            </div>
-        </div>
-        <div class="project-card">
-            <div class="featured-tag">Fixed</div>
-            <img src="FD.avif" alt="Fixed Deposit" class="project-image">
-            <div class="project-content">
-                <h3 class="project-title">Fixed Deposit</h3>
-                <p class="project-description">Track Your estimated returns according to your investment</p>
-                
-                <div class="project-links">
-                    <a href="#" class="demo-btn">Yet To Come</a>
-                </div>
-        </div>
-        </div>  
-        <div class="project-card">
-            <div class="featured-tag">Fixed</div>
-            <img src="AP.jpg" alt="Stock Market" class="project-image">
-            <div class="project-content">
-                <h3 class="project-title">Annuity Plan</h3>
-                <p class="project-description">Track Your estimated returns according to your investment</p>
-                
-                <div class="project-links">
-                    <a href="#" class="demo-btn">Yet To Come</a>
-                </div>
-            </div>
-        </div>
-        <div class="project-card">
-            <div class="featured-tag">Stocks</div>
-            <img src="STOCK.jpg" alt="Stock Market" class="project-image">
-            <div class="project-content">
-                <h3 class="project-title">Stock Market</h3>
-                <p class="project-description">Track Your estimated returns according to your investment</p>
-                
-                <div class="project-links">
-                    <a href="#" class="demo-btn">Yet To Come</a>
-                </div>
-        </div>
-        </div>
-        <footer>
-            <div class="footer-content">
-                
-                <p>&copy; 2023 Investment Tracker. All rights reserved.</p>
-                <p>Designed by <a href="Dharun-2k7" target="_blank">Dharun-2k7</a></p>
-            </div>
-        </footer>
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>
