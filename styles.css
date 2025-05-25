@@ -10,10 +10,6 @@
          background-repeat: no-repeat;
          color: #fff;
         }
-
-   
-
-        
         
         header {
             position: sticky;
@@ -125,7 +121,6 @@
         
         .sidebar li:hover {
             background: rgba(255, 255, 255, 0.15);
-            border-color: rgba(255, 0, 255, 0.5);
             transform: translateX(10px);
             box-shadow: 0 4px 20px rgba(255, 0, 255, 0.2);
         }
@@ -271,9 +266,7 @@
             transition: all 0.4s ease;
             
         
-        .projects-container.shifted {
-            margin-left: 320px;
-        }
+        
         
         @keyframes Open {
             0% {
