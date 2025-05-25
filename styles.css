@@ -4,11 +4,16 @@
             box-sizing: border-box;
             font-family: 'Arial', sans-serif;
         }
-        
         body {
-            background-color: #121212;
-            color: #fff;
+          background: linear-gradient(135deg, #1e003a, #000000);
+          background-attachment: fixed;
+         background-repeat: no-repeat;
+         color: #fff;
         }
+
+   
+
+        
         
         header {
             position: sticky;
@@ -182,7 +187,7 @@
         .glow-text {
             font-size: 40px;
             font-weight: bold;
-            background: linear-gradient(-45deg, #ef0303, #1b030e, #b5c523, #ff00ff);
+            background: linear-gradient(-45deg, #aa0df3, #f50505, #b5c523, #ff00ff);
             background-size: 400% 400%;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -264,7 +269,7 @@
             padding: 20px;
             justify-content: center;
             transition: all 0.4s ease;
-        }
+            
         
         .projects-container.shifted {
             margin-left: 320px;
@@ -300,6 +305,13 @@
         .project-card:hover {
             transform: translateY(-10px);
             box-shadow: 5px 5px 15px rgb(255, 253, 253);
+            background: rgba( 255, 255, 255, 0.15 );
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+            backdrop-filter: blur( 20px );
+            -webkit-backdrop-filter: blur( 20px );
+            border-radius: 10px;
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
+        }
         }
         
         .project-image {
