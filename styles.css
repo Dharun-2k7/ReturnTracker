@@ -18,7 +18,7 @@
             align-items: center;
             padding: 20px;
             background-color: #000;
-            height: 70px;
+            height: 90px;
             position: relative;
         }
         
@@ -34,7 +34,7 @@
             display: flex;
             align-items: center;
             gap: 10px;
-            margin-right: auto; /* Push menu to the left */
+            margin-right: auto; 
         }
         
         .menu-toggle:hover {
@@ -436,6 +436,35 @@
             font-size: 20px;
             height: auto;
         }
+            .menu-toggle {
+                margin-right: 20px;
+                font-size: 20px;
+            }
+            
+            .sidebar h2 {
+                font-size: 20px;
+            }
+            
+            .sidebar li {
+                font-size: 14px;
+            }
+            
+            .cta-button {
+                padding: 10px 30px;
+                font-size: 16px;
+            }
+            
+            .project-card {
+                max-width: 100%;
+            }
+            
+            .project-title {
+                font-size: 18px;
+            }
+            
+            .project-description {
+                font-size: 14px;
+            }
 
         }
         
