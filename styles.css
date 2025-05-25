@@ -431,10 +431,11 @@
                 word-spacing: 5px;
                 letter-spacing: 1px;
             }
-
-        }
-        .logo h1{
+            .logo h1{
             text-align: center;
             font-size: 20px;
             height: auto;
         }
+
+        }
+        
