@@ -58,25 +58,7 @@
             background-clip: text;
         }
         
-        .join-btn {
-            background-color: #e4ff00;
-            color: #000;
-            padding: 10px 20px;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 2px;
-            box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.2);
-        }
-        .join-btn:hover {
-             background: linear-gradient(to right, #ff00ff, #ff8c00);
-             -webkit-text-fill-color: transparent;
-             -webkit-background-clip: text;
-            background-clip: text;
-             border: 2px solid #ff8c00;  
-            box-shadow: 0 0 40px #c62525
-           
-        }
-        
+       
         .main-content {
             text-align: center;
 
@@ -143,7 +125,12 @@
         }
         
         .cta-button:hover {
-            transform: translateY(-5px);
+            background: linear-gradient(to right, #ff00ff, #ff8c00);
+             -webkit-text-fill-color: transparent;
+             -webkit-background-clip: text;
+            background-clip: text;
+             border: 2px solid #ff8c00;  
+            box-shadow: 0 0 40px #c62525
             
         }
 
