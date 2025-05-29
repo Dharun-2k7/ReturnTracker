@@ -288,7 +288,7 @@
         }
         
         .project-card {
-            width: 80%;
+            width: 100%;
             max-width: 400px;
             margin:  auto;
             background-color: #2d2727;
@@ -360,6 +360,69 @@
             flex: 1;
             background-color: #8c52ff;
             color: white;
+        }
+        .tools-section {
+             text-align: center;
+            padding: 60px 20px;
+            background-color: #000;
+        }
+        .tools-heading {
+             color: yellow;
+             font-size: 28px;
+             margin-bottom: 40px;
+             font-weight: bold;
+            }
+
+        .tools-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+             gap: 40px;
+            animation: scrollReveal 2s ease-in-out both;
+        }
+
+         .tool-item {
+            text-align: center;
+            width: 120px;
+         }
+
+        .tool-logo {
+             width: 100px;
+             height: 100px;
+             border-radius: 50%;
+            object-fit: cover;
+             border: 3px solid yellow;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+         }
+
+        .tool-logo:hover {
+               transform: scale(1.1);
+               box-shadow: 0 0 25px 5px #f5ff00, 0 0 50px 10px #ff00f7;
+        }
+
+          .tool-name {
+              color: white;
+              font-size: 16px;
+              font-weight: bold;
+             margin-top: 10px;
+         }
+
+            @keyframes scrollReveal {
+              from {
+                 opacity: 0;
+                 transform: translateY(50px);
+                }
+
+             to {
+               opacity: 1;
+               transform: translateY(0);
+                 }
+            }
+                
+        
+        marquee{
+            color: red;
+            font-weight: bolder;
         }
         
         .footer-content {
