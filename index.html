@@ -1,144 +1,311 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Investment Tracker - Projects Showcase</title>
+    <title>Investment Tracker - Professional Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div class="overlay" id="overlay"></div>
     
-    <header>
-        <button class="menu-toggle" id="menuToggle">
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+    <header class="header">
+        <div class="header-container">
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            
+            <div class="logo">
+                <h1>Investment Tracker</h1>
             </div>
-            <span>Menu</span>
-        </button>
-        <div class="logo">
-            <h1>Investment Tracker</h1>
+            
+            <nav class="desktop-nav">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#tools" class="nav-link">Tools</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
         </div>
     </header>
     
-    <div class="sidebar" id="sidebar">
-        <ul>
-            <li>Tools Used</li>
-            <li>About Us</li>
-            <li>Contact</li>
-            <li>Privacy Policy</li>
-            <li>Terms of Service</li>
-            
-        </ul>
-    </div>
-    
-    <div class="main-content" id="mainContent">
-        <h1 class="glow-text">Track Your Return Amounts!</h1>
-        <p class="tagline">beginner friendly investment return tracker</p>
-        <a href="https://github.com/Dharun-2k7/ReturnTracker" class="cta-button" target="_blank">Visit GitHub Repo</a>
-    </div>
-    
-    <div class="page-wrapper">
-        <div class="section-header">
-            <h3 class="featured-projects">Choose Investment Type</h3>
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-content">
+            <nav class="sidebar-nav">
+                <a href="#home" class="sidebar-link">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="#tools" class="sidebar-link">
+                    <i class="fas fa-tools"></i>
+                    <span>Tools Used</span>
+                </a>
+                <a href="#about" class="sidebar-link">
+                    <i class="fas fa-info-circle"></i>
+                    <span>About Us</span>
+                </a>
+                <a href="#contact" class="sidebar-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+                <a href="#privacy" class="sidebar-link">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Privacy Policy</span>
+                </a>
+                <a href="#terms" class="sidebar-link">
+                    <i class="fas fa-file-contract"></i>
+                    <span>Terms of Service</span>
+                </a>
+            </nav>
         </div>
+    </aside>
+    
+    <main class="main-content" id="mainContent">
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1 class="hero-title">Track Your Investment Returns</h1>
+                <p class="hero-subtitle">Professional investment return calculator for beginners and experts</p>
+                <div class="hero-actions">
+                    <a href="https://github.com/Dharun-2k7/ReturnTracker" class="cta-button primary" target="_blank">
+                        <i class="fab fa-github"></i>
+                        Visit GitHub Repo
+                    </a>
+                    <button class="cta-button secondary" onclick="scrollToSection('investment-types')">
+                        Get Started
+                    </button>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">5+</div>
+                    <div class="stat-label">Investment Types</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Free to Use</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Available</div>
+                </div>
+            </div>
+        </section>
 
-        <div class="projects-container" id="projectsContainer">
-            <div class="project-card">
-                <div class="featured-tag">Mutual</div>
-                <img src="IMAGES/SIP.avif" alt="Investment Tracker" class="project-image">
-                <div class="project-content">
-                    <h3 class="project-title">Systematic Investment Plan (SIP)</h3>
-                    <p class="project-description">Track Your estimated returns according to your investment</p>
-                    <div class="project-links">
-                        <a href="#" class="demo-btn">Yet to come</a>
+        <section class="investment-section" id="investment-types">
+            <div class="section-header">
+                <h2 class="section-title">Choose Your Investment Type</h2>
+                <p class="section-description">Select from our comprehensive range of investment calculators</p>
+            </div>
+
+            <div class="investment-grid">
+                <div class="investment-card">
+                    <div class="card-header">
+                        <div class="card-icon mutual">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="card-badge mutual">Mutual Funds</div>
+                    </div>
+                    <div class="card-image">
+                        <img src="IMAGES/SIP.avif" alt="SIP Investment" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Systematic Investment Plan (SIP)</h3>
+                        <p class="card-description">Calculate your estimated returns with systematic monthly investments in mutual funds</p>
+                        <div class="card-features">
+                            <span class="feature-tag">Monthly Investment</span>
+                            <span class="feature-tag">Compound Growth</span>
+                        </div>
+                        <button class="card-button" onclick="openComingSoon('SIP')">
+                            Coming Soon
+                        </button>
+                    </div>
+                </div>
+
+                <div class="investment-card">
+                    <div class="card-header">
+                        <div class="card-icon fixed">
+                            <i class="fas fa-piggy-bank"></i>
+                        </div>
+                        <div class="card-badge fixed">Fixed Deposit</div>
+                    </div>
+                    <div class="card-image">
+                        <img src="IMAGES/PPF.jpg" alt="PPF Investment" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Public Provident Fund</h3>
+                        <p class="card-description">Long-term tax-saving investment with guaranteed returns and EEE benefits</p>
+                        <div class="card-features">
+                            <span class="feature-tag">Tax Saving</span>
+                            <span class="feature-tag">15 Year Lock</span>
+                        </div>
+                        <button class="card-button" onclick="openComingSoon('PPF')">
+                            Coming Soon
+                        </button>
+                    </div>
+                </div>
+
+                <div class="investment-card">
+                    <div class="card-header">
+                        <div class="card-icon fixed">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="card-badge fixed">Bank Deposit</div>
+                    </div>
+                    <div class="card-image">
+                        <img src="IMAGES/FD.avif" alt="Fixed Deposit" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Fixed Deposit</h3>
+                        <p class="card-description">Secure investment option with guaranteed returns and flexible tenure options</p>
+                        <div class="card-features">
+                            <span class="feature-tag">Guaranteed Returns</span>
+                            <span class="feature-tag">Flexible Tenure</span>
+                        </div>
+                        <button class="card-button" onclick="openComingSoon('FD')">
+                            Coming Soon
+                        </button>
+                    </div>
+                </div>
+
+                <div class="investment-card">
+                    <div class="card-header">
+                        <div class="card-icon fixed">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <div class="card-badge fixed">Retirement</div>
+                    </div>
+                    <div class="card-image">
+                        <img src="IMAGES/AP.jpg" alt="Annuity Plan" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Annuity Plan</h3>
+                        <p class="card-description">Plan your retirement with regular income streams and pension calculations</p>
+                        <div class="card-features">
+                            <span class="feature-tag">Regular Income</span>
+                            <span class="feature-tag">Retirement Planning</span>
+                        </div>
+                        <button class="card-button" onclick="openComingSoon('Annuity')">
+                            Coming Soon
+                        </button>
+                    </div>
+                </div>
+
+                <div class="investment-card">
+                    <div class="card-header">
+                        <div class="card-icon stocks">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <div class="card-badge stocks">Equity</div>
+                    </div>
+                    <div class="card-image">
+                        <img src="IMAGES/STOCK.jpg" alt="Stock Market" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Stock Market</h3>
+                        <p class="card-description">Track your equity investments and calculate potential returns from stock market</p>
+                        <div class="card-features">
+                            <span class="feature-tag">High Returns</span>
+                            <span class="feature-tag">Market Risk</span>
+                        </div>
+                        <button class="card-button" onclick="openComingSoon('Stocks')">
+                            Coming Soon
+                        </button>
                     </div>
                 </div>
             </div>
-            
-            <div class="project-card">
-                <div class="featured-tag">Fixed</div>
-                <img src="IMAGES/PPF.jpg" alt="Public Provident Fund" class="project-image">
-                <div class="project-content">
-                    <h3 class="project-title">Public Provident Fund</h3>
-                    <p class="project-description">Track Your estimated returns according to your investment</p>
-                    <div class="project-links">
-                        <a href="#" class="demo-btn">YET TO COME</a>
+        </section>
+
+        <section class="tools-section" id="tools">
+            <div class="section-header">
+                <h2 class="section-title">Built With Modern Technologies</h2>
+                <p class="section-description">Developed using industry-standard web technologies</p>
+            </div>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <img src="IMAGES/html.png" alt="HTML5" class="tool-logo">
                     </div>
+                    <h3 class="tool-name">HTML5</h3>
+                    <p class="tool-description">Semantic markup for better structure</p>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <img src="IMAGES/css.png" alt="CSS3" class="tool-logo">
+                    </div>
+                    <h3 class="tool-name">CSS3</h3>
+                    <p class="tool-description">Modern styling with animations</p>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <img src="IMAGES/JS.jpg" alt="JavaScript" class="tool-logo">
+                    </div>
+                    <h3 class="tool-name">JavaScript</h3>
+                    <p class="tool-description">Interactive user experience</p>
                 </div>
             </div>
-            
-            <div class="project-card">
-                <div class="featured-tag">Fixed</div>
-                <img src="IMAGES/FD.avif" alt="Fixed Deposit" class="project-image">
-                <div class="project-content">
-                    <h3 class="project-title">Fixed Deposit</h3>
-                    <p class="project-description">Track Your estimated returns according to your investment</p>
-                    <div class="project-links">
-                        <a href="#" class="demo-btn">Yet To Come</a>
-                    </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="footer-title">Investment Tracker</h3>
+                <p class="footer-description">Professional investment calculator for smart financial planning</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
                 </div>
             </div>
-            
-            <div class="project-card">
-                <div class="featured-tag">Fixed</div>
-                <img src="IMAGES/AP.jpg" alt="Annuity Plan" class="project-image">
-                <div class="project-content">
-                    <h3 class="project-title">Annuity Plan</h3>
-                    <p class="project-description">Track Your estimated returns according to your investment</p>
-                    <div class="project-links">
-                        <a href="#" class="demo-btn">Yet To Come</a>
-                    </div>
-                </div>
+            <div class="footer-section">
+                <h4 class="footer-subtitle">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#tools">Tools</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </div>
-            
-            <div class="project-card">
-                <div class="featured-tag">Stocks</div>
-                <img src="IMAGES/STOCK.jpg" alt="Stock Market" class="project-image">
-                <div class="project-content">
-                    <h3 class="project-title">Stock Market</h3>
-                    <p class="project-description">Track Your estimated returns according to your investment</p>
-                    <div class="project-links">
-                        <a href="#" class="demo-btn">Yet To Come</a>
-                    </div>
-                </div>
+            <div class="footer-section">
+                <h4 class="footer-subtitle">Legal</h4>
+                <ul class="footer-links">
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms of Service</a></li>
+                    <li><a href="#disclaimer">Disclaimer</a></li>
+                </ul>
             </div>
         </div>
-    </div>
-    <section class="tools-section">
-    <h2 class="tools-heading">Look who's building this webpage...</h2>
-    <div class="tools-grid">
-      <div class="tool-item">
-        <img src="IMAGES/html.png" alt="HTML" class="tool-logo"/>
-        <p class="tool-name">HTML</p>
-      </div>
-      <div class="tool-item">
-        <img src="IMAGES/css.png" alt="CSS" class="tool-logo"/>
-        <p class="tool-name">CSS</p>
-      </div>
-      <div class="tool-item">
-        <img src="IMAGES/JS.jpg" alt="JavaScript" class="tool-logo"/>
-        <p class="tool-name">JavaScript</p>
-      </div>
-     
-      
-    </div>
-  </section>
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2023 Investment Tracker. All rights reserved.</p>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Investment Tracker. All rights reserved.</p>
             <p>Designed by <a href="#" target="_blank">Dharun-2k7</a></p>
         </div>
     </footer>
-<script src="script.js"></script>
-<script>
-  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-</script>
-<script defer src="/_vercel/insights/script.js"></script>
-    
+
+    <!-- Coming Soon Modal -->
+    <div class="modal" id="comingSoonModal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <div class="modal-header">
+                <i class="fas fa-clock"></i>
+                <h2>Coming Soon</h2>
+            </div>
+            <p id="modalMessage">This investment calculator is under development.</p>
+            <button class="modal-button" onclick="closeModal()">Got it</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
